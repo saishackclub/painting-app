@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Build a painting app</title>
+    <meta name="description" content="Create an MSPaint on your browser with HTML, CSS, and JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Paint, MSPaint, Canvas, Drawing">
+    <meta name="author" content="SAIS Hack Club">
+    <meta name="theme-color" content="#ec3750">
+
+    <meta property="og:title" content="Build a painting app">
+    <meta property="og:description" content="Create an MSPaint on your browser with HTML, CSS, and JavaScript">
+    <meta property="og:image" content="https://raw.githubusercontent.com/saishackclub/painting-app/main/og-image.png">
+    <meta property="og:url" content="https://www.saishack.club/workshops">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Build a painting app">
+    <meta name="twitter:description" content="Create an MSPaint on your browser with HTML, CSS, and JavaScript">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/saishackclub/painting-app/main/og-image.png">
+    <meta name="twitter:site" content="@saishackclub">
+    <meta name="twitter:creator" content="@saishackclub">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="colors">
+            <button value="#ec3750"></button>
+            <button value="#ff8c37"></button>
+            <button value="#f1c40f"></button>
+            <button value="#33d6a6"></button>
+            <button value="#5bc0de"></button>
+            <button value="#338eda"></button>
+            <button value="#a633d6"></button>
+            <button value="#8492a6"></button>
+            <button value="#000"></button>
+            <button value="#FFF"></button>
+        </div>
+
+        <input id="brush" type="range" value="1" min="1" max="5" step="1"></input>
+        <div class="edit-buttons">
+            <button id="clear" type="button">Clear</button>
+            <button id="save" type="button">Save</button>
+        </div>
+        <br>
+        <canvas id="paint-canvas" width="640" height="400"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="http://util.saishack.club/badge.js"></script>
+</body>
+
+</html>
